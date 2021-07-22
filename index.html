@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Dashboard</title>
+</head>
+
+<body id="body">
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar__left">
+        <a class="active_link" href="#">Your Dashboard</a>
+      </div>
+      <div class="navbar__right">
+        <div class="container_search">
+          <input type="text" name="search" placeholder="Search..." class="input" />
+
+          <a href="#" class="btn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+        <a href="#">
+          <img width="30" src="https://thumbs.dreamstime.com/z/doctor-medical-icon-cdr-187019168.jpg" alt="Avatar" />
+        </a>
+        <span class="avatar_name">Dr Anne Snowdan.</span>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main__container">
+        <!-- MAIN TITLE STARTS HERE -->
+
+        <div class="main__title">
+          <img src="https://thumbs.dreamstime.com/z/doctor-medical-icon-cdr-187019168.jpg" alt="" />
+          <div class="main__greeting">
+            <h1>Hello, Anne!</h1>
+            <p>Welcome to your admin dashboard</p>
+          </div>
+        </div>
+
+        <!-- MAIN TITLE ENDS HERE -->
+
+        <!-- MAIN CARDS STARTS HERE -->
+        <div class="main__cards">
+
+          <div class="card card11">
+            <div class="card_inner">
+              <p class="text-primary-p"> <i class="fas fa-caret-down" style="font-size: 25px;"></i></p>
+              <span class="font-bold text-title">May 2020</span>
+            </div>
+          </div>
+
+          <div class="card card12">
+            <div class="card_inner">
+              <p class="text-primary-p">Don't forget to complete <br> your daily health report. <br> Have a nice day!
+              </p>
+              <img src="https://image.freepik.com/free-vector/woman-female-doctor-landing-page-hero_164911-121.jpg"
+                alt="" style="width: 100px; height: 100%;">
+              <button class="button">Complete report</button>
+            </div>
+          </div>
+        </div>
+        <!-- MAIN CARDS ENDS HERE -->
+
+        <!-- CHARTS STARTS HERE -->
+        <div class="charts">
+
+          <div class="charts__right">
+            <div class="charts__right__title">
+              <div>
+                <h1>Today's appointments</h1>
+              </div>
+            </div>
+
+            <div class="charts__right__cards">
+              <div class="card1">
+                <i class="fas fa-user"></i>
+                <h1>Jessica Ashcroft</h1>
+                <p>Follow-up</p>
+              </div>
+
+              <div class="card2">
+                <i class="fas fa-user"></i>
+                <h1>Lily Anderson</h1>
+                <p>New patient</p>
+              </div>
+
+              <div class="card3">
+                <i class="fas fa-user"></i>
+                <h1>Amanda Lipp</h1>
+                <p>New Patient</p>
+              </div>
+
+              <div class="card4">
+                <i class="fas fa-user"></i>
+                <h1>Adrienne Oily</h1>
+                <p>Follow-up</p>
+              </div>
+
+            </div>
+            <div class="charts__right__title">
+              <div>
+                <h1>Monthly reports</h1>
+              </div>
+            </div>
+
+            <div class="charts__right__cards_report">
+              <div class="card5">
+                <i class="fas fa-file-alt"></i>
+                <p>Treatment report</p>
+              </div>
+
+              <div class="card6">
+                <i class="fas fa-file-alt"></i>
+                <p>State of being report</p>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+        <!-- CHARTS ENDS HERE -->
+      </div>
+    </main>
+
+    <!-- timeline start -->
+
+    <div class="time_line">
+      <div class="time_line_list">
+        <h2>Today's timeline</h2>
+        <ul class="mylist">
+          <li class="active_timeline"><i class="fas fa-clock "></i> Strated shift <span class="time">6.00 AM</span></li>
+          <li><i class="fas fa-user"></i> Appointment<span class="time">6.00 AM</span></li>
+          <li><i class="fas fa-user"></i> Appointment<span class="time">6.00 AM</span></li>
+          <li><i class="fas fa-mug-hot"></i> Break<span class="time1">6.00 AM</span></li>
+          <li><i class="fas fa-user"></i> Appointment<span class="time">6.00 AM</span></li>
+          <li><i class="fas fa-user"></i> Appointment<span class="time">6.00 AM</span></li>
+        </ul>
+        <div class="shift_button"><button>End today's shift</button></div>
+        <div class="Set_reminder_button"><button>Set a reminder</button></div>
+      </div>
+
+    </div>
+
+
+
+    <!-- timeline end -->
+
+    <div id="sidebar">
+      <div class="sidebar__title">
+        <div class="sidebar__img">
+          <img src="https://cdn1.iconfinder.com/data/icons/hospital-lineal-set/512/Stethoscope-512.png" alt="logo" />
+          <h1>DocApp</h1>
+        </div>
+        <i onclick="closeSidebar()" class="fa fa-times" id="sidebarIcon" aria-hidden="true"></i>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li class="active">
+            <a href="#">
+              <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+              <span class="title active_title">Dashboard</span>
+            </a>
+            <span class="title1">Dashboard</span>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-calendar"></i></span>
+              <span class="title">Calendar</span>
+            </a>
+            <span class="title1">Calendar</span>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-user"></i></span>
+              <span class="title">Profile</span>
+            </a>
+            <span class="title1">Profile</span>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-cog"></i></span>
+              <span class="title">Settings</span>
+            </a>
+            <span class="title1">Settings</span>
+          </li>
+          <div class="sidebar__logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <a href="#">Logout</a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
